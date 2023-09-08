@@ -20,3 +20,22 @@ int	**ft_map(void)
 	}
 	return (map);
 }
+
+void	ft_print_map(void)
+{
+	int	**map = ft_map();
+
+	for(int i = 0; i < LENGHT; i++)
+	{
+		for(int j = 0; j < LENGHT; j++)
+		{
+			if(map[i][j] == 0)
+				printf(" %d ", map[i][j]);
+			else
+				printf("%d ", map[i][j]);
+		}
+		printf("\n");
+	}
+	free(map);
+	return (0);
+}
