@@ -8,7 +8,10 @@ int	main(void)
 	{
 		for(int j = 0; j < LENGHT; j++)
 		{
-			printf("%d", map[i][j]);
+			if(map[i][j] == 0)
+				printf(" %d ", map[i][j]);
+			else 
+				printf("%d ", map[i][j]);
 		}
 		printf("\n");
 	}
